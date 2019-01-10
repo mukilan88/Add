@@ -8,13 +8,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    // class created for each palettes used
     private EditText mNum1;
     private EditText mNum2;
     private Button mAdd;
     private TextView mAns;
 
-
+    //over writing the process
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mNum2 = (EditText)findViewById(R.id.num2);
         mAdd = (Button) findViewById(R.id.add);
         mAns = (TextView) findViewById(R.id.ans);
-
+/*TODO: add the number click the button*/
         mAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
